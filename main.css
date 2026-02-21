@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+h1 {
+  color: rgb(46, 71, 101);
+  margin-bottom: 20px;
+}
+
+aside {
+  background-color: white;
+  width: 320px;
+  height: 100vh;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  border-right: 1px solid #e2e8f0;
+  padding: 20px;
+}
+
+.menu li {
+  margin-bottom: 6px;
+}
+
+.menu li a {
+  background-color: #f8f9fa;
+  color: #2d1967;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 14px;
+  transition: 0.2s;
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu li:hover a, 
+.menu li.active a {
+  background-color: #2d1967;
+  color: white;
+}
+
+#rightside {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.table-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+}
